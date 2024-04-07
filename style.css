@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #B0A990;
+    font-family: Roboto Condensed;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 225px 8fr;
+    grid-template-rows: 1.5fr 8fr 0.5fr;
+}
+
+/* -------------------- construction du aside -------------------- */
+
+aside {
+    background-color: #202030;
+    grid-area: 1 / 1 / 4 / 1;
+    color: azure;
+}
+
+
+.logo {
+    font-family: Merriweather Sans;
+    padding-left: 10%;
+}
+
+.features {
+    width: 70%;
+    font-weight: 200;
+}
+
+aside ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.title {
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 0.8em;
+}
+
+.ligne {
+    border: 1px azure solid;
+}
+
+
+.feature:hover {
+    background-color: #39304A;
+}
+
+
+header {
+    background-color: #39304A;
+    grid-area: 1 / 2 / 1 / 2;
+}
+
+
+
+main {
+    background-color: #635C51;
+}
+
+footer {
+    background: #B0A990;
+    grid-area: 3 / 1 / 4 / 3;
+}
