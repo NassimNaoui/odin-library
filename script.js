@@ -16,4 +16,5 @@ function addBookBtoLibrary (bookName, author, read, liked) {
 
 addBookBtoLibrary('x','y', false, false)
 addBookBtoLibrary('Al quran', 'Allah', true, true)
+addBookBtoLibrary("harry potter à l'école des sorciers", 'JK Rowling', false, true)
 console.log(myLibrary)
