@@ -14,7 +14,7 @@ body {
     height: 100%;
     width: 100%;
     grid-template-columns: 225px 8fr;
-    grid-template-rows: 1.5fr 8fr 0.5fr;
+    grid-template-rows: 1fr 9fr;
 }
 
 /* -------------------- construction du aside -------------------- */
@@ -73,4 +73,106 @@ main {
 footer {
     background: #B0A990;
     grid-area: 3 / 1 / 4 / 3;
+}
+
+
+/* -------------- construction du header-------------- */
+
+header {
+    display: flex;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: gainsboro;
+    width: 350px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+/* .ri-search-2-line {
+    color: white;
+} */
+
+input {
+    border: none;
+    height: 30px;
+    width: 330px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #dcdcdc;
+}
+
+.user-features {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sub {
+    background-color: #202030;
+    color: white;
+    height: 35px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+}
+
+.sub:hover{
+    background-color: #39304A;
+}
+
+.avatar {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: none;
+}
+
+
+/* -------------------- construction du main -------------------- */
+
+main {
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    background-color: whitesmoke;
+    width: 98%;
+    height: 98%;
+    border-radius: 5px ;
+    display: grid;
+    grid-template-rows: 0.5fr 9.5fr;
+}
+
+.main-container-features {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 1%;
+}
+
+.add {
+    border: solid 1px #B1B1B1;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: whitesmoke;
+}
+
+.add:hover {
+    background-color: #202030;
+    color: whitesmoke;
 }
