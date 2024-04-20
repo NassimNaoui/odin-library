@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
         <header>
             <div class="search-bar">
                 <i class="ri-search-2-line"></i>
                 <form action="">
-                    <input  type="search" placeholder="">
+                    <input type="search" placeholder="">
                 </form>
             </div>
             <div class="user-features">
@@ -26,7 +28,7 @@
         </header>
         <aside>
             <h1 class="logo">Odin Library</h1>
-            <div class="features"> 
+            <div class="features">
                 <ul>
                     <li class="title">BROWSE</li>
                     <li class="feature"> <i class="ri-line-chart-line"></i> Top Books</li>
@@ -44,12 +46,52 @@
         <main>
             <div class="main-container">
                 <div class="main-container-features">
-                    <button class="add" >+</button>
+                    <button id="show-popup" class="add">+</button>
                 </div>
-                <div class="main-container-contents"></div>
+                <div class="main-container-contents">
+                    <div class="popup">
+                        <div class="header-popup">
+                            <h2>Add your Book</h2>
+                            <button class="close-btn">x</button>
+                        </div>
+                        <div class="form">
+                            <div class="form-element">
+                                <label for="author">Author</label>
+                                <input type="text" id="author" placeholder="Enter author name">
+                            </div>
+                            <div class="form-element">
+                                <label for="">Book Name</label>
+                                <input type="text" id="book" placeholder="Enter book name">
+                            </div>
+                            <div class="yesno">
+                                <div class="form-element">
+                                    <label for="read">Read it?</label>
+                                    <input type="text" list="readOptions" id=readInput">
+                                    <datalist id="readOptions">
+                                        <option value="Yes">
+                                        <option value="Not yet">
+                                    </datalist>
+                                    </form>
+                                </div>
+                                <div class="form-element">
+                                    <label for="loved">Loved it?</label>
+                                    <input type="text" list="lovedOptions" id=lovedInput">
+                                    <datalist id="lovedOptions">
+                                        <option value="Yes">
+                                        <option value="Not yet">
+                                    </datalist>
+                                </div>
+                            </div>
+                            <div class="add-in">
+                                <button class="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

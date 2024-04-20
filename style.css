@@ -150,8 +150,8 @@ main {
 
 .main-container {
     background-color: whitesmoke;
-    width: 98%;
-    height: 98%;
+    width: 98.5%;
+    height: 97%;
     border-radius: 5px ;
     display: grid;
     grid-template-rows: 0.5fr 9.5fr;
@@ -175,4 +175,98 @@ main {
 .add:hover {
     background-color: #202030;
     color: whitesmoke;
+}
+
+
+/* ----------------- Construction du pop up ----------------- */
+
+
+.header-popup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popup {
+    position: absolute;
+    padding: 10px;
+    top: -150%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-25%, -25%) scale(1.25);
+    background-color: rgba(239, 236, 236, 0.6);
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 5px rgb(0, 0, 0, 0.15);
+}
+
+.popup.active {
+    top:45%;
+    opacity: 1;
+    transform: translate(-25%, -25%) scale(1);
+}
+
+.popup .close-btn {
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    background-color: #e4e3e3;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;
+    top: 5px;
+}
+
+.popup .form .form-element {
+    padding: 2%;
+}
+
+.popup .form .form-element label {
+    gap: 50px;
+}
+
+.popup .form .form-element input[type="text"] {
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.popup .form .form-element input[placeholder] {
+    font-size: 0.7em;
+}
+
+.yesno {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2px;
+    padding-right: 4px;
+}
+
+.popup .form .yesno .form-element input[type="text"]  {
+    width: 80px;
+    margin-left: 5px;
+}
+
+.add-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px
+}
+
+.submit {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #202030;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #39304A;
 }
