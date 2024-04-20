@@ -190,9 +190,9 @@ main {
 .popup {
     position: absolute;
     padding: 10px;
-    top: -150%;
+    top: 45%;
     left: 50%;
-    opacity: 0;
+    opacity: 1;
     transform: translate(-25%, -25%) scale(1.25);
     background-color: rgba(239, 236, 236, 0.6);
     height: 350px;
@@ -201,11 +201,11 @@ main {
     box-shadow: 2px 2px 5px 5px rgb(0, 0, 0, 0.15);
 }
 
-.popup.active {
+/* .popup.active {
     top:45%;
     opacity: 1;
     transform: translate(-25%, -25%) scale(1);
-}
+} */
 
 .popup .close-btn {
     border-radius: 100%;
@@ -247,6 +247,22 @@ main {
 .popup .form .yesno .form-element input[type="text"]  {
     width: 80px;
     margin-left: 5px;
+}
+
+.yesno {
+    margin-top: 10px;
+}
+
+.yesno button {
+    border-radius: 5px;
+    border: none;
+    background-color: #e4e3e3;
+    padding: 5px 10px;
+}
+
+.yesno button:hover {
+    background-color:#39304A;
+    color: white;
 }
 
 .add-in {
