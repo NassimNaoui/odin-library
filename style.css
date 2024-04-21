@@ -99,9 +99,6 @@ header {
     padding-left: 10px;
 }
 
-/* .ri-search-2-line {
-    color: white;
-} */
 
 input {
     border: none;
@@ -125,6 +122,7 @@ input {
     width: 100px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .sub:hover{
@@ -190,9 +188,9 @@ main {
 .popup {
     position: absolute;
     padding: 10px;
-    top: 45%;
+    top: -150%;
     left: 50%;
-    opacity: 1;
+    opacity: 0;
     transform: translate(-25%, -25%) scale(1.25);
     background-color: rgba(239, 236, 236, 0.6);
     height: 350px;
@@ -201,11 +199,11 @@ main {
     box-shadow: 2px 2px 5px 5px rgb(0, 0, 0, 0.15);
 }
 
-/* .popup.active {
+.popup.active {
     top:45%;
     opacity: 1;
     transform: translate(-25%, -25%) scale(1);
-} */
+}
 
 .popup .close-btn {
     border-radius: 100%;
@@ -258,9 +256,23 @@ main {
     border: none;
     background-color: #e4e3e3;
     padding: 5px 10px;
+    cursor: pointer;
 }
 
-.yesno button:hover {
+/* .yesno button:hover {
+    background-color:#39304A;
+    color: white;
+} */
+
+.yes-option-read.colored,.no-option-read.colored,
+.yes-option-loved.colored,.no-option-loved.colored {
+    background-color:#202030;
+    color: white;
+}
+
+
+.yes-option-read.hovered,.no-option-read.hovered,
+.yes-option-loved.hovered,.no-option-loved.hovered {
     background-color:#39304A;
     color: white;
 }
@@ -277,7 +289,7 @@ main {
     border-radius: 8px;
     border: none;
     background-color: #202030;
-    color: white;
+    color: #ffffff;
     font-size: 0.9em;
     font-weight: 500;
     cursor: pointer;
@@ -285,4 +297,17 @@ main {
 
 .submit:hover {
     background-color: #39304A;
+    color: #000000;
+}
+
+/* -------------------- construction des cards -------------------- */
+
+.cards {
+    position: static;
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.author-name {
+    color: red;
 }
