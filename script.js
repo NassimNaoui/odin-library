@@ -1,19 +1,27 @@
+class book {
+    constructor(bookName, author, read, liked) {
+        this.bookName = bookName;
+        this.author = author;
+        this.read = read;
+        this.liked = liked;
+    }
+}
 // construction de l'objet librarie et fonction pour ajouter des éléments
 
 
 let myLibrary = []
 
-const book = (bookName, author, read, liked) => {
-    return {
-        bookName: bookName,
-        author: author,
-        read: read,
-        liked: liked
-    }
-}
+// const book = (bookName, author, read, liked) => {
+//     return {
+//         bookName: bookName,
+//         author: author,
+//         read: read,
+//         liked: liked
+//     }
+// }
 
 function addBookToLibrary(bookName, author, read, liked) {
-    newBook = book(bookName, author, read, liked)
+    newBook = new book(bookName, author, read, liked)
     return myLibrary.push(newBook)
 }
 
